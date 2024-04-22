@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+navbar{
+    display: flex;
+    position: sticky;
+    background-image: linear-gradient( to right,white , pink);
+}
+.logo img{
+   position: relative;
+   width: 40%;
+   margin-left: 2rem;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+   
+    list-style: none;
+    margin-top: 1rem;
+}
+nav ul li a{
+   
+    text-decoration: none;
+    margin: 2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    color: blueviolet;
+}
+.container{
+    display: flex;
+    width: 90%;
+    margin: 1rem auto;
+    background: linear-gradient(to bottom,#eeeeee,#ff4949);
+}
+.content_container{
+    margin: 5rem;
+}
+.content_container h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:  #680747;
+}
+.content_container p{
+    font-size: 1.2rem;
+    font-family: cursive;
+}
+.grid_container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    place-content: center;
+}
+.grid_container img{
+    width: 100%;
+    /* max-width: 300px; */
+    /* margin: auto; */
+    border-radius: 1rem;
+}
+.grid_container img:nth-child(1){
+    transform: translateY(50px);
+}
+.grid_container img:nth-child(2){
+    transform: translateY(-50px);
+}
+.grid_container{
+    /* position: absolute; */
+    /* width: 100%; */
+    /* max-width: 310px; */
+    /* left: 50%; */
+    /* top: 50%; */
+}
+.about_us{
+    width: 90%;
+    margin: 1rem auto;
+}
+.content h1{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color:  #680747;
+}
+.content p{
+    font-size: 1.2rem;
+    font-family: cursive;
+    margin-bottom: 1rem;
+}
+.content h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+}
+.content button a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 2.5rem;
+    padding: 2.5rem;
+    font-weight: 600;
+}
+.content button{
+    border-radius:1rem;
+    background-color:#e9767c;
+    transition: .2s;
+}
+.content button:hover{
+    transform: translateY(0.5rem);
+}
+.ab_inf{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    background:linear-gradient(to left,#79c2d0,#bbe4e9);
+}
+.ab_inf h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem;
+}
+.ab_inf i{
+    margin: 1.2rem;
+}
+.ab_inf p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+.Courses{
+    width: 90%;
+    margin: 1rem auto;
+    /* background: linear-gradient(to bottom,#eeeeee,#ff4949); */
+}
+.card_container{
+    display: flex;
+    margin: 1rem auto;
+    width: 90%;
+    justify-content: center;
+}
+.card_container .card{
+    position: relative;
+    
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.card_container .card:hover{
+    height: 320px;
+}
+.card_container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.card_container .card .imgBx img{
+    max-width: 100%;
+}
+.card_container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.card_container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+.art_work{
+    width: 90%;
+    margin: 1rem auto;
+    background: linear-gradient(to bottom,#eeeeee,#ff4949);
+}
+.art_work h2{
+    margin: 2rem;
+    padding-top: 1.5rem;
+    color: #680747;
+}
+.art{
+    display: flex;
+    justify-content: center;
+}
+.art img{
+    margin: 2rem;
+    padding: 2rem;
+}
+footer{
+    width: 90%;
+    margin: 1rem auto;
+    background: linear-gradient(to right,#f1f1f1,#49beb7);
+}
+.fo_content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cont i,h2 {
+    margin: 1.5rem;
+    transition: 0.3s;
+}
+.cont i:hover{
+    transform: translateX(0.5rem);
+}
+.para{
+    margin: 1.5rem;
+}
+.cop h5{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
